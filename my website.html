@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+  <script src="./js/bootstrap.min.js"></script>
+  <style>
+    .full-screen {
+      padding: 0;
+    }
+
+    .horizontalLine {
+      width: '100%';
+      height: 5px;
+      background-color: rgb(144, 148, 151);
+    }
+
+    .tab {
+      background-color: rgb(245, 179, 66);
+
+    }
+
+    .full_width {
+      width: 100%;
+      height: 100%;
+
+    }
+
+    .col-md-6 {
+      padding: 0;
+
+    }
+
+    .bg-light {
+      background-color: white !important;
+
+    }
+
+    .top-tab {
+      height: 30px;
+      background-color: blue;
+      color: white;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .top-tab a {
+      color: white;
+      text-decoration: none;
+
+    }
+
+    .padding {
+
+      padding: 15px;
+
+    }
+
+    .tab {
+      padding: 20px;
+    }
+
+    .heading-line {
+      display: flex;
+    }
+
+    .line {
+      width: 100%;
+      border: none;
+      height: 1.5px;
+      margin-top: 25px;
+      margin-left: 10px;
+      background-color: black;
+    }
+
+    .heading {
+      display: inline;
+      white-space: nowrap;
+    }
+
+    .card {
+      box-shadow: 0 0 1px;
+      padding: 0;
+      height: 350px;
+
+
+    }
+
+    .col-md-4 {
+      padding: 5px !important;
+    }
+
+    .search_box {
+      border: 0;
+      border-bottom: 2px solid black;
+      height: 45px;
+    }
+
+    .header {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .header-top {
+      width: 100%;
+    }
+
+    .nav-items {
+      width: 100%;
+      justify-content: space-evenly;
+
+    }
+
+    .nav-link {
+      color: black !important;
+      font-weight: bold;
+
+    }
+
+    .footer {
+      background-color: #F8F8F8;
+    }
+
+    .footer-icon {
+      margin-top: 57px;
+      display: flex;
+      justify-content: center;
+
+    }
+
+    .custom-btn {
+      background-color: blue !important;
+
+    }
+
+    .font-size {
+      font-size: 12px;
+      width: 80%;
+    }
+
+    .footer-content {
+
+
+      display: flex;
+      flex-direction: column;
+
+      align-items: flex-end;
+      padding-top: 25px;
+
+    }
+
+    #MM-Logo {
+      padding-right: 35%;
+
+    }
+
+    .footer-mid p {
+      margin-bottom: 0;
+    }
+
+    .footer-mid-content {
+
+      width: 78%;
+      display: flex;
+      justify-content: end;
+
+
+    }
+
+    .squiggles {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .squiggles-btn {
+      height: 50px;
+
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container-fluid full-screen">
+    <div class="top-tab">
+      <a class="padding" href="#">About</a>
+      <a class="padding" href="#">Guide</a>
+      <a class="padding" href="#">Contect Us</a>
+    </div>
+  </div>
+  <div class="container">
+
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="header-top">
+
+          <div class="header">
+            <a class="navbar-brand" href="#"><img src="logo2.PNG"></a>
+
+            <!--<form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>-->
+            <input type="text" placeholder="search for articles" class="search_box">
+          </div>
+
+
+          <div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-items">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Campus</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Connect</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">DD&CWC</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Career</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Alumni</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Expressions</a>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </nav>
+
+
+    <div class="row">
+      <div class="col-md-6 ">
+        <img class="full_width" src="photo12.PNG">
+
+      </div>
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-6 ">
+            <img class="full_width" src="photo2.PNG">
+          </div>
+
+          <div class="col-md-6 ">
+            <img class="full_width" src="photo3.PNG">
+          </div>
+
+
+          <div class="col-md-6 ">
+            <img class="full_width" src="photo4.PNG">
+          </div>
+
+          <div class="col-md-6 ">
+
+            <img class="full_width" src="photo5.PNG">
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="jumbotron tab">
+
+        <div class="row">
+
+
+          <div class="col-md-2 squiggles">
+            <button class="btn btn-danger squiggles-btn">Squigggles</button>
+          </div>
+          <div class="col-md-10">
+            <p>As per the notice circulated on 24 June 2022, all UG students, including the student newly admitted in
+              the
+              2021 batch, are required to return to the campus on 18th July 2022 and all PG students by that of 25th
+              July
+              2022. Due to the ongoing maintenance work, no student will be allowed before 18th July 2022 to enter the
+              campus.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="heading-line">
+      <div>
+        <h4 class="heading">This Issue</h4>
+
+      </div>
+      <hr class="line" />
+    </div>
+
+    <div>
+      <div class="row">
+        <div class="col-md-4 ">
+          <div class="card">
+            <img src="post1.PNG">
+            <h5>Exit Survey:Acadmics</h5>
+            <p>Dive into this version of the exit survey to know the opinions of the class of 2022 regarding their
+              academic journey at NIT, Rourkela.
+
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="post2.PNG">
+
+            <h5>Exit Survey 2022-Carrer and Path Forward</h5>
+            <p>Dive into this version of the exit survey to know the opinions of the class of 2022 regarding the career
+              opportunities and multitude of opportunities ...
+
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4 ">
+          <div class="card">
+            <img src="post3.PNG">
+            <h5>Exit Survey 2022-Extra Cerricular Activities</h5>
+            <P>Take a sneak peek into the extra-curricular activities at NIT, Rourkela, and how they spanned out for the
+              Class of 2022.
+
+            </P>
+          </div>
+        </div>
+
+      </div>
+      <br>
+      <div>
+        <div class="row">
+          <div class="col-md-4 ">
+            <div class="card">
+              <img src="post5.PNG">
+              <h5>The Tale Of A Prodigious Resercher:Manoj Hari</h5>
+              <p>Manoj Hariharan, a Ph.D. scholar from the Department of Earth and Atmospheric Sciences, NIT Rourkela,
+                was recently selected for the Fulbright-Kalam Fe...
+
+              </p>
+            </div>
+          </div>
+
+
+          <div class="col-md-4 ">
+            <div class="card">
+              <img src="post6.PNG">
+              <h5>Exit Survey 2022-Campus Lifestyle And Opinions</h5>
+              <p>Team Monday Morning conducted an Exit Survey whose respondents were students from the Class of 2022.
+                Based on the data collected, this article explore...
+
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 ">
+            <div class="card">
+              <img src="post7.PNG">
+              <h5>Ascending The Realm Of UPSC:Biswa Bisruta Thripathy</h5>
+              <p>Team MM interacts with Biswa Bisruta Tripathy, an alumnus from the Class of 2015, who has emerged with
+                flying color in the UPSC CSE 2021 with an All ...
+
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <br>
+      <div class="heading-line">
+        <div>
+          <h4 class="heading">Trending</h4>
+
+        </div>
+        <hr class="line" />
+      </div>
+      <br>
+      <a heref="#">
+
+        <button type="button" class="btn btn-primary custom-btn">Acadamics</button>
+      </a>
+
+      <a heref="#">
+
+
+
+        <button type="button" class="btn btn-primary custom-btn ">Campus Buzz</button>
+      </a>
+
+      <a heref="#">
+
+        <button type="button" class="btn btn-primary  custom-btn">Acadamics</button>
+      </a>
+
+      <a heref="#">
+
+        <button type="button" class="btn btn-primary custom-btn">Sudent Articles</button>
+      </a>
+
+      <a heref="#">
+
+        <button type="button" class="btn btn-primary custom-btn">Poll Analysis</button>
+      </a>
+
+
+      <a heref="#">
+
+        <button type="button" class="btn btn-primary custom-btn">Admissions</button>
+      </a>
+      <br><br>
+    </div>
+  </div>
+  <div class="container-fluid footer">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="footer-content">
+          <img id="MM-Logo" src="logo.PNG">
+          <p class="font-size">Monday Morning is the student Media Body of National Institute Of Technology Rourkela. We
+            cover all the
+            events, issues and activities going on inside the campus. We serve as a link between the administration and
+            the students.
+
+          </p>
+        </div>
+
+      </div>
+      <div class="col-md-4">
+        <div class="footer-mid-content">
+          <div class="row footer-mid">
+
+            <div class="col-md-4 ">
+              <p><b>campus</b></p>
+              <p><b>Coneect</b></p>
+              <p><b>DD&CWC</b></p>
+              <p><b>Career</b></p>
+              <p><b>Alumni</b></p>
+              <p><b>Expressions</b></p>
+            </div>
+            <div class="col-md-4">
+              <p><b>About</b></p>
+              <p><b>Guide</b></p>
+              <p><b>Contact Us</b></p>
+            </div>
+            <div class="col-md-4">
+              <p><b>Subscribre</b></p>
+              <p><b>Terms Of Use</b></p>
+              <p><b>Privacy Policy</b></p>
+              <p><b>Sitemap</b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 footer-icon">
+        <img src="Capture.PNG " height="50">
+
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
